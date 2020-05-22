@@ -13,7 +13,8 @@ Access Web application by clicking [here](https://ruddykani.github.io/akanname/i
 
 Access the git repository by clicking [here](https://github.com/RuddyKani/akanname.git).
 
-Clone repository from github
+Clone repository from github  
+
 git clone https://github.com/RuddyKani/akanname.git
 
 ##Behavior Driven Development
@@ -27,11 +28,11 @@ git clone https://github.com/RuddyKani/akanname.git
 ## Known Bugs
 No known bugs. Site still in progress as class project
 ## Technologies Used
-HTML
-JavaScript
-CSS
-Boostsrap
-Markdown
+HTML  
+JavaScript  
+CSS  
+Bootstrap  
+Markdown  
 
 ## Support and contact details
 Share any issues or suggestions to ruddymukami@msn.com
