@@ -11,12 +11,11 @@
       <div class="jumbotron"><!--begin jumbotron-->
         <h1>Akan Name Generator</h1>
         <p>This web application takes your birth date and gender and calculates the day of the week you were born and then depending on your gender gives your corresponding Akan name.</p>
-
       </div><!--end jumbotron-->
       <div class="container">
         <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day of the week they were born.</p>
       </div>
-      <div class="card">
+      <div class="card"> <!--Begin Akan names card-->
         <div class="card-title rownames">Akan Names</div>
         <div class="card-body">
           <div class="container">
@@ -62,7 +61,37 @@
             </div><!--Saturday row -->
           </div>
         </div>
-      </div>
+      </div><!--End Akan names card-->
+      <div class="card"><!--Begin user card-->
+        <div class="card-title rownames">Akan Name Checker</div>
+        <div class="card-body">
+          <p>Enter your Date of birth and select your gender to check your Akan name.</p>
+          <form class="formborder">
+            <label>Date of Birth:</label>
+            <label for="birthDay">Day</label>
+            <input type="number" id="birthDay" name="birthDay" min="1" max="31" value="" required>
+            <label for="birthMonth">Month</label>
+            <input type="number" id="birthMonth" name="birthMonth" min="1" max="12" value="" required>
+            <label for="birthYear">Year</label>
+            <input type="number" id="birthYear" name="birthYear" min="1800" max="2099" value="" required>
+            <br><br>
+            <label>Gender:</label>
+            <label for="gender">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="gender">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <br><br>
+            <label for="dayofweek">Day of week</label>
+            <input type="text" id="dayofweek" name="dayofweek" value="" readonly>
+            <br>
+            <label for="akan">Akan Name</label>
+            <input type="text" id="akan" name="akan" value="" readonly>
+            <br><br>
+            <input type="button" onclick="checkAkan()" value="Generate Akan Name">
+          </form>
+        </div>
+      </div><!--End user card-->
     </div><!--end contaier-->
+    <script src="js/scripts.js" charset="utf-8"></script>
   </body>
 </html>
