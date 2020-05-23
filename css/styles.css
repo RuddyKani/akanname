@@ -1,3 +1,17 @@
 h1 {
   font-weight: bold;
 }
+
+.colborder{
+  border:#cdcdcd medium solid ;
+  font-weight: bold;
+  background-color:#D3D3D3;
+}
+.rownames{
+  font-weight: bold;
+  background-color:#32CD32;
+}
+.daycol{
+  font-style: italic;
+  font-weight: bold;
+}
