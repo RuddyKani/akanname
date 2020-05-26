@@ -66,7 +66,7 @@
         <div class="card-title rownames">Akan Name Checker</div>
         <div class="card-body">
           <p>Enter your Date of birth and select your gender to check your Akan name.</p>
-          <form class="formborder">
+          <form class="formborder"><br>
             <label>Date of Birth:</label>
             <label for="birthDay">Day</label>
             <input type="number" id="birthDay" name="birthDay" min="1" max="31"  required>
@@ -81,10 +81,10 @@
             <label for="gender">Female</label>
             <input type="radio" id="female" name="gender" value="female" required>
             <br><br>
-            <label for="dayofweek">Day of week</label>
+            <label for="dayofweek">Day of week:</label>
             <input type="text" id="dayofweek" name="dayofweek" value="" readonly>
             <br>
-            <label for="akan">Akan Name</label>
+            <label for="akan">Akan Name:</label>
             <input type="text" id="akan" name="akan" value="" readonly>
             <br><br>
             <input type="submit" onclick="checkAkan()" value="Generate Akan Name">
