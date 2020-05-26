@@ -14,11 +14,24 @@ function checkAkan() {
 //(d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
   //alert(document.getElementById('gender').value);
   // if (document.getElementById("male").checked = true){
-  //   gender1 ="male";
+  //  | gender1 ="male";
   // }
+if  (!checkDay|| !checkMonth || !checkYear || (checkMale ===false && checkFemale ===false)){
+  alert("Missing details!! Ensure birth date is entered and Gender is selected");
+}
+else {
+  document.getElementById('dayofweek').value=akanDay[day-1];
+    if (checkMale ===true){
+      document.getElementById('akan').value=maleAkan[day-1];
+      alert("You were born on a " +akanDay[day-1] +" and your Akan name is "+maleAkan[day-1]);
+    }
+    else if (checkFemale===true) {
+  document.getElementById('akan').value=femaleAkan[day-1];
+  alert("You were born on a " +akanDay[day-1] +" and your Akan name is "+femaleAkan[day-1]);
+    }
+}
 
-  console.log(typeof checkYear);
-  alert(typeof checkYear+" checkMale is " + checkMale +" checkFemale " + checkFemale +" Day " + checkDay
+alert(typeof checkYear+" checkMale is " + checkMale +" checkFemale " + checkFemale +" Day " + checkDay
 +"Year " + century +"Calculated day " + day);
   //alert(document.getElementsByName('gender').);
   //var gender =document.getElementById('gender').value
