@@ -16,6 +16,9 @@ function checkAkan() {
   // if (document.getElementById("male").checked = true){
   //  | gender1 ="male";
   // }
+if (day <=0 || day >7)  {
+  day=1;
+}
 if  (!checkDay|| !checkMonth || !checkYear || (checkMale ===false && checkFemale ===false)){
   alert("Missing details!! Ensure birth date is entered and Gender is selected");
 }
