@@ -14,8 +14,21 @@ function checkAkan() {
   if (day <=0 || day >7)  {
     day=1;
   }
+
   if  (!checkDay|| !checkMonth || !checkYear || (checkMale ===false && checkFemale ===false)){
     alert("Missing details!! Ensure birth date is entered and Gender is selected");
+  }
+  else if (checkDay <=0 || checkDay >31)  {
+    alert("Day must be between 1 and 31");
+    document.getElementById('birthDay').value="";
+  }
+  else if (checkMonth <=0 ||  checkMonth>12)  {
+    alert("Month must be between 1 and 12");
+    document.getElementById('birthMonth').value="";
+  }
+  else if (checkYear <1900 || checkYear >2099)  {
+    alert("Year must be between 1900 and 2099");
+    document.getElementById('birthYear').value="";
   }
   else {
     document.getElementById('dayofweek').value=akanDay[day-1];
