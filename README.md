@@ -26,7 +26,9 @@ git clone https://github.com/RuddyKani/akanname.git
 | Female 	| 0 Jan 2020  	| Invalid day 	|
 
 ## Known Bugs
-No known bugs. Site still in progress as class project
+Formula used is returning negative values for some dates. This has been defaulted to 1.
+Future improvement to use Date Picker to fully validate for date values.
+
 ## Technologies Used
 HTML  
 JavaScript  
