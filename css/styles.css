@@ -1,7 +1,9 @@
 h1 {
   font-weight: bold;
 }
-
+p{
+  text-align: justify;
+}
 .colborder{
   border:#cdcdcd medium solid ;
   font-weight: bold;
