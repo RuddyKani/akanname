@@ -11,7 +11,7 @@ function checkAkan() {
   var year = checkYear %100;
   var day =Math.floor((((century/4) -2*century-1) + ((5*year/4) ) + ((26*(checkMonth+1)/10)) + checkDay) % 7);
 
-  if (day <=0 || day >7)  {
+  if (day <0 || day >7)  {
     day=1;
   }
 
@@ -31,14 +31,14 @@ function checkAkan() {
     document.getElementById('birthYear').value="";
   }
   else {
-    document.getElementById('dayofweek').value=akanDay[day-1];
+    document.getElementById('dayofweek').value=akanDay[day];
       if (checkMale ===true){
-        document.getElementById('akan').value=maleAkan[day-1];
-        alert("You were born on a " +akanDay[day-1] +" and your Akan name is "+maleAkan[day-1]);
+        document.getElementById('akan').value=maleAkan[day];
+        alert("You were born on a " +akanDay[day] +" and your Akan name is "+maleAkan[day]);
       }
       else if (checkFemale===true) {
-        document.getElementById('akan').value=femaleAkan[day-1];
-        alert("You were born on a " +akanDay[day-1] +" and your Akan name is "+femaleAkan[day-1]);
+        document.getElementById('akan').value=femaleAkan[day];
+        alert("You were born on a " +akanDay[day] +" and your Akan name is "+femaleAkan[day]);
       }
   }
 
