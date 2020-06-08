@@ -9,11 +9,11 @@ function checkAkan() {
   var year = new Date(checkDay).getFullYear();
   var day = new Date(checkDay).getDay();
 
-  if  (checkMale ===false && checkFemale ===false){
-    alert("Missing details!! Ensure Gender is selected");
+  if  (!checkDay|| (checkMale ===false && checkFemale ===false)){
+    alert("Missing details!! Ensure birth date is entered and Gender is selected");
   }
   else if (isNaN(day)==true)  {
-    alert("Missing or Erroneous details!! Enter a valid date");
+    alert("Enter a valid date");
   }
   else if (year <1900 || year >2099)  {
     alert("Year must be between 1900 and 2099");
