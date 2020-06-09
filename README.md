@@ -26,8 +26,7 @@ git clone https://github.com/RuddyKani/akanname.git
 | Female 	| 0 Jan 2020  	| Invalid day 	|
 
 ## Known Bugs
-Formula used is returning negative values for some dates. This has been defaulted to 1.
-Future improvement to use Date Picker to fully validate for date values.
+Date Picker used to get date value. User is able to enter dates which are not valid. Validation done on clicking Generate Akan Name button. This will be improved using event handlers in future.
 
 ## Technologies Used
 HTML  
